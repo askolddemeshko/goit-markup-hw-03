@@ -37,7 +37,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     color: var(--txt-title);
-
 }
 
 
@@ -49,6 +48,7 @@ h3,
 h4,
 p {
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -252,7 +252,7 @@ img {
 /* about */
 
 .about {
-    padding: 94px;
+    padding: 94px 0;
 }
 
 .about-list {
@@ -276,7 +276,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--txt-title);
-    margin-right: 30px;
+    margin-bottom: 10px;
 }
 
 .about-text {
@@ -287,6 +287,12 @@ img {
 }
 
 /* work */
+
+.work {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
+
 
 .work-header {
     font-weight: 700;
@@ -300,7 +306,6 @@ img {
 
 .work-list {
     display: flex;
-    margin-bottom: 94px;
 }
 
 .work-list-item:not(:last-child) {
@@ -315,6 +320,16 @@ img {
     padding-bottom: 94px;
 }
 
+.command-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txt-title);
+    margin-bottom: 50px;
+}
+
 .command-list {
     display: flex;
 }
@@ -327,17 +342,6 @@ img {
     margin-right: 30px;
 }
 
-.command-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--txt-title);
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
-
 .command-list-header,
 .command-text {
     font-size: 16px;
@@ -347,17 +351,19 @@ img {
     color: var(--txt-title);
 }
 
+.command-list-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .command-list-header {
     font-weight: 500;
     color: var(--txt-title);
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .command-text {
     color: var(--txt-secondery);
-    padding-top: 0px;
-    padding-bottom: 30px;
 }
 
 
@@ -369,19 +375,28 @@ img {
     display: none;
 }
 
-/*  block portfolio-btn --- блок кнопок */
+/*  portfolio-filter --- блок кнопок */
+
+
+.portfolio-block {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .portfolio-list {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-left: auto;
+    margin-bottom: 50px;
 }
 
+/*
 .portfolio-item {
-    margin-bottom: 50px;
-    margin-top: 94pt;
+    margin-bottom: 0px;
+    margin-top: 0pt;
 }
+*/
 
 .portfolio-item:not(:last-child) {
     margin-right: 8px;
@@ -408,7 +423,7 @@ img {
     color: var(--txt-general);
 }
 
-/*  block projects-list --- блок проэктов */
+/*  projects-list --- блок проэктов */
 
 .projects-list {
     padding: 0;
